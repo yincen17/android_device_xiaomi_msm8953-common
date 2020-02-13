@@ -167,6 +167,9 @@ HWUI_COMPILE_FOR_PERF := true
 TARGET_INIT_VENDOR_LIB := libinit_msm8953
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
 
+# IPA
+USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
+
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
@@ -206,6 +209,7 @@ TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab_AB.qcom
 else
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/fstab.qcom
 endif
+
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
