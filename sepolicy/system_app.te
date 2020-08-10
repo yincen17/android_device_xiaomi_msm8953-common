@@ -1,2 +1,8 @@
 # FM radio needs to set fm properties
 set_prop(system_app, fm_prop) 
+
+# allow system apps to read battery status
+allow system_app sysfs_battery_supply:dir search; 
+allow system_app sysfs_battery_supply:file { 
+getattr open read };
+r_dir_file(system_app, sysfs_battery_supply
