@@ -45,3 +45,7 @@
 /sys/class/leds/vibrator/vmax_mv_user                u:object_r:sysfs_vibrator:s0
 /sys/class/leds/vibrator/vmax_mv_call                u:object_r:sysfs_vibrator:s0
 /sys/class/leds/vibrator/vmax_mv_strong              u:object_r:sysfs_vibrator:s0
+
+# flashlight 
+/sys/class/leds/led:torch_0/max_brightness      	 u:object_r:sysfs_torch:s0
+/sys/class/leds/led:torch_1/max_brightness			 u:object_r:sysfs_torch:s0
