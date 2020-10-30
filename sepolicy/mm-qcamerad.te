@@ -6,3 +6,4 @@ allow mm-qcamerad camera_data_file:file { create getattr open write };
 allow mm-qcamerad camera_data_file:dir { create add_name write search };
 allow mm-qcamerad diag_device:chr_file { ioctl open read write };
 r_dir_file(mm-qcamerad, sysfs_kgsl)
+allow mm-qcamerad default_prop:property_service { set };
