@@ -295,6 +295,12 @@ PRODUCT_COPY_FILES += \
 # Properties
 -include device/xiaomi/msm8953-common/prop.mk
 
+# Perf
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.perf@2.0.vendor \
+    vendor.qti.hardware.perf@2.1.vendor \
+    vendor.qti.hardware.perf@2.2.vendor
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson
